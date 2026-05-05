@@ -1,1 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Madhav Coaching Classes| Sign Up</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="index.html" class="logo">Madhav Coaching</a>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="signup.html" class="nav-link active">Sign Up</a>
+          <a href="login.html" class="nav-link">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-main">
+      <div class="container auth-card">
+        <h1>Create your account</h1>
+        <form id="signupForm" class="form" novalidate>
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+            <small class="error" data-error-for="name"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <small class="error" data-error-for="email"></small>
+          </div>
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="At least 6 characters" minlength="6" required>
+            <small class="error" data-error-for="password"></small>
+          </div>
+          <div class="form-row">
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Re-enter password" minlength="6" required>
+            <small class="error" data-error-for="confirmPassword"></small>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
+          <p class="muted">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Madhav Coaching Classes</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/auth.js"></script>
+  </body>
+  </html>
+
+
 
